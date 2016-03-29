@@ -17,7 +17,7 @@ export default class ReSTProcessor {
     processor(ext) {
         return {
             preProcess(text, filePath) {
-                return parse(text, filePath);
+                return parse(text);
             },
             postProcess(messages, filePath) {
                 return {

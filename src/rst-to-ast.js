@@ -18,11 +18,10 @@ function filterAndReplaceNodeAttributes(node) {
 /**
  * parse reStructuredText and return ast mapped location info.
  * @param {string} text
- * @param filePath file path
  * @returns {TxtNode}
  */
-export function parse(text, filePath) {
-    let ast = JSON.parse(execSync(`rst2ast -q ${filePath}`));
+export function parse(text) {
+    let ast = JSON.parse(execSync("rst2ast -q", {input: text}));
     const src = new StructuredSource(text);
     traverse(ast).forEach(function (node) {
         if (this.notLeaf) {
