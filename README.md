@@ -2,7 +2,7 @@
 
 reStructuredText(`*.rst`) support for [textlint](https://github.com/textlint/textlint "textlint").
 
-## Installtion
+## Installation
 
 To install textlint-plugin-rst, the follow python package must be installed.
 
@@ -14,9 +14,8 @@ And run follow command.
 
 ## Usage
 
-- Add `--plugin rst` to commoand options
-- or
-- Add following codes to `.textlintrc`
+- Add `--plugin rst` to command options
+- or add following codes to `.textlintrc`
 ```
 {
     "plugins": [
