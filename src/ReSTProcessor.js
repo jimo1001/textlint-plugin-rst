@@ -7,7 +7,7 @@ export default class ReSTProcessor {
         this.config = config;
     }
 
-    static availableExtensions() {
+    availableExtensions() {
         return [
             ".rst",
             ".rest"
